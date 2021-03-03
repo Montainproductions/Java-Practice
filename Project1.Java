@@ -3,7 +3,7 @@ import java.util.Collections;
 
 public class Project1{
     public Project1(){
-        UnlockPattern();
+        
     }
 
     public void Homework(String numRange){
@@ -71,8 +71,39 @@ public class Project1{
         }
     }
 
-    public void UnlockPattern(){
-        
+    public void Statistics(ArrayList<Integer>testCase){
+        /*Problem: https://open.kattis.com/problems/statistics
+        Started: 03/03/2020
+        */
+
+        /*for (int v = 0; v < rangeNumbers.length; v+=2) {
+            int highNumber = Integer.parseInt(rangeNumbers[v+1]);
+            int lowNumber = Integer.parseInt(rangeNumbers[v]);
+            int rangeOfProblems = (highNumber - lowNumber)+1;
+            amountOfProblems = amountOfProblems + rangeOfProblems;
+        }*/
+
+        public int minimum = min(testCase);
+        max(testCase);
+        System.out.print.ln(minimum);
     }
+
+    public int min(ArrayList<Integer>numbersList){
+        private int lowestNumber = null;
+        for (Integer num : numbersList) { 		      
+            switch(num){
+                case num >= lowestNumber:
+                    break;
+                case num < lowestNumber:
+                    lowestNumber = num;
+                    break;
+                case defult:
+                    lowestNumber = num;
+                    break;
+            }
+       }
+       return lowestNumber;
+    }
+
     public static void main(String[] args){CodePractice f = new CodePractice();};
 }
