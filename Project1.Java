@@ -104,6 +104,5 @@ public class Project1{
        }
        return lowestNumber;
     }
-
-    public static void main(String[] args){CodePractice f = new CodePractice();};
+    public static void main(String[] args){Project1 f = new Project1();};
 }
